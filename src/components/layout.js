@@ -12,14 +12,11 @@ import {
 
 
 const Layout = ({ pageTitle, children }) => {
-  const { title } = useSiteMetadata()
-
   const siteMeta = useSiteMetadata()
-  console.log(siteMeta);
 
   return (
     <div className={container}>
-      <header className={siteTitle}>{title}</header>
+      <header className={siteTitle}>{siteMeta.title}</header>
       <nav>
         <ul className={navLinks}>
           <li className={navLinkItem}>
