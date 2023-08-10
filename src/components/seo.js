@@ -12,7 +12,9 @@ const Seo = ({ title, description, children }) => {
 
   return (
     <div>
-      <title>{title} | {seo.title}</title>
+      <html lang="en" />
+      <title>{seo.title}</title>
+      <meta name="description" content={seo.description} />
       {children}
     </div>
   )
